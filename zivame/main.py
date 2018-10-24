@@ -18,7 +18,7 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        self.redirect("https://www.zivame.com", True)
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
